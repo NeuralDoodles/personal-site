@@ -48,12 +48,12 @@
   margin: 0 0 _size(element-margin);
 
   .image {
-    overflow: hidden;
+    overflow: visible;
     width: 100%;
 
     img {
       @include vendor( 'transition', 'transform #{_duration(transition)} ease-out');
-      width: 100%;
+      
     }
 
     &:hover {
