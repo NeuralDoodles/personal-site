@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
 
-const Cell = ({ data }) => (
+const VisualCell = ({ data }) => (
   <div className="cell-container">
-    <article className="mini-post">
+    <article className="mini-post_visuals">
       <header>
         <h3><a href={data.link}>{data.title}</a></h3>
         <time className="published">{dayjs(data.date).format('MMMM, YYYY')}</time>
@@ -21,7 +21,7 @@ const Cell = ({ data }) => (
   </div>
 );
 
-Cell.propTypes = {
+VisualCell.propTypes = {
   data: PropTypes.shape({
     title: PropTypes.string.isRequired,
     id: PropTypes.string.isRequired,
@@ -32,4 +32,4 @@ Cell.propTypes = {
   }).isRequired,
 };
 
-export default Cell;
+export default VisualCell;

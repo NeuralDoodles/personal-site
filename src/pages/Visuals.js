@@ -1,7 +1,7 @@
 import React from 'react';
 import Main from '../layouts/Main';
 
-import Cell from '../components/Visuals/Cell';
+import VisualCell from '../components/Visuals/VisualCell';
 import data from '../data/visuals';
 
 const Visuals = () => (
@@ -18,7 +18,7 @@ const Visuals = () => (
         </div>
       </header>
       {data.map((project) => (
-        <Cell
+        <VisualCell
           data={project}
           key={project.title}
         />

@@ -22,7 +22,7 @@ jobs:
       run: npm ci
     - name: Build and Deploy
       env:
-        NODE_ENV: production
+        NODE_ENV: productionD
         # This is set automatically by github
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |

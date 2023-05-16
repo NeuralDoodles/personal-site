@@ -17,6 +17,7 @@ const Resume = lazy(() => import('./pages/Resume'));
 const Stats = lazy(() => import('./pages/Stats'));
 const Visuals = lazy(() => import('./pages/Visuals'));
 const Attractor = lazy(() => import('./pages/Visualizations/Attractor'));
+const ToyDiffusion = lazy(() => import('./pages/Research/toy-diffusion'));
 
 const App = () => (
   <BrowserRouter basename={PUBLIC_URL}>
@@ -30,6 +31,7 @@ const App = () => (
         <Route path="/resume" element={<Resume />} />
         <Route path="/visuals" element={<Visuals />} />
         <Route path="/attractor" element={<Attractor />} />
+        <Route path="/projects/toy-diffusion" element={<ToyDiffusion />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>
