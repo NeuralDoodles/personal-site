@@ -18,6 +18,7 @@ const Stats = lazy(() => import('./pages/Stats'));
 const Visuals = lazy(() => import('./pages/Visuals'));
 const Attractor = lazy(() => import('./pages/Visualizations/Attractor'));
 const ToyDiffusion = lazy(() => import('./pages/Research/toy-diffusion'));
+const GPT2 = lazy(() => import('./pages/Research/gpt2-from-scratch'));
 
 const App = () => (
   <BrowserRouter basename={PUBLIC_URL}>
@@ -30,8 +31,9 @@ const App = () => (
         <Route path="/contact" element={<Contact />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/visuals" element={<Visuals />} />
-        <Route path="/attractor" element={<Attractor />} />
+        <Route path="/visuals/attractor" element={<Attractor />} />
         <Route path="/projects/toy-diffusion" element={<ToyDiffusion />} />
+        <Route path="/projects/gpt2-from-scratch" element={<GPT2 />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>

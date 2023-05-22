@@ -11,7 +11,7 @@ const VisualCell = ({ data }) => (
       </header>
       <a href={data.link} className="image">
         <center id={data.id}>
-          <img src={`${process.env.PUBLIC_URL}${data.image}`} alt={data.title} width="30%" />
+          <img src={`${process.env.PUBLIC_URL}${data.image}`} alt={data.title} width={data.width} />
         </center>
       </a>
       <div className="description">
@@ -29,6 +29,7 @@ VisualCell.propTypes = {
     image: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
     desc: PropTypes.string.isRequired,
+    width: PropTypes.string.isRequired,
   }).isRequired,
 };
 
